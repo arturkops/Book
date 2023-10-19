@@ -1,0 +1,24 @@
+@startuml first
+
+class Autor {
+    -name String
+    -age Int
+    -address String
+    -construtor(name, age , address)
+    +print()
+}
+
+class Livro {
+    -title String
+    -year Int
+    -editor String
+    -pages Int
+    -price Float
+    -autor Autor
+    -construtor(title,year,editor,pages,price)
+    +print()
+}
+
+Livro *-- Autor
+
+@enduml
