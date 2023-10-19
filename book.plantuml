@@ -8,7 +8,7 @@ class Autor {
     +print()
 }
 
-class Livro {
+class Book {
     -title String
     -year Int
     -editor String
@@ -19,6 +19,6 @@ class Livro {
     +print()
 }
 
-Livro *-- Autor
+Book *-- Autor
 
 @enduml
